@@ -1,6 +1,3 @@
-<style>
-    code {display: block;}
-</style>
 <p class="description">
 To use the Simple WP Logger in your code, just type smth like
 <code>
