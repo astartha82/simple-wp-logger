@@ -24,6 +24,6 @@ If you want to log things in a separate file, you can use the third argument:
 </code>
 This file will be stored in the directory you set in the options (or "swpl_dir"), with the file prefix you also set in the options (or "swpl"):
 <code>
-        wp-content/uploads/<?php echo $options['swpl_dir']; ?>/<?php echo $options['swpl_file']; ?>_another-file_<?php echo date('Y-m-d'); ?>.log
+        wp-content/uploads/swpl-logs/swpl_another-file_<?php echo date('Y-m-d'); ?>.log
 </code>
 </p>
