@@ -12,13 +12,13 @@ if(!function_exists('_log')) {
 	function _log($name, $log = '', $logfile = false) {
 		$options = get_option( 'swpl_options' );
 		$swpldir = $options['swpl_dir'];
-		if(!$swpldir) $swpldir = 'swpl_logs';
+		if(!$swpldir) $swpldir = 'swpl-logs';
 		$swplfile = $options['swpl_file'];
 		if(!$swplfile) $swplfile = 'swpl';
 
 		$dir = wp_get_upload_dir()['basedir'] . '/' . $swpldir . '/';
-		if(!file_exists($swpldir)) {
-			mkdir($swpldir);
+		if(!file_exists($dir)) {
+			mkdir($dir);
 		}
 		if($logfile) {
 			$logfile = $dir . $swplfile . '_' . $logfile . '_' . date('Y-m-d') .'.log';
